@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Rivaldo Filho">
+    <meta name="description" content="Formulário de inscrição da Olympia Prime.">
+    <meta name="keywords" content="inscrição, matrícula, academia, Olympia Prime">
+    <title>Olympia Prime - Inscrição</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Olympia Prime</h1>
+        <p>Perguntas frequentes</p>
+
+        <nav>
+            <a href="index.html">Início</a> |
+            <a href="quem-somos.html">Quem Somos</a> |
+            <a href="grupos-musculares.html">Grupos Musculares</a> |
+            <a href="modalidades.html">Modalidades</a> |
+            <a href="horarios.html">Horários</a> |
+            <a href="planos.html">Planos</a> |
+            <a href="inscricao.html">Inscrição</a> |
+            <a href="confirmacao.html">Confirmação</a> |
+            <a href="unidades.html">Unidades</a> |
+            <a href="contatos.html">Contatos</a> |
+            <a href="faq.html">FAQ</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Faça sua inscrição</h2>
+
+            <form method="get" action="confirmacao.html">
+
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" placeholder="exemplo@email.com" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                    </p>
+
+                    <p>
+                        <label for="endereco">Endereço:</label><br>
+                        <textarea id="endereco" placeholder="Digite seu endereço completo" rows="4" cols="40"
+                            required></textarea>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha seu plano</legend>
+
+                    <p>
+                        <label for="plano">Plano:</label><br>
+
+                        <select id="plano" required>
+                            <option value="">Selecione um plano</option>
+                            <option value="mensal">Mensal - R$ 100,00</option>
+                            <option value="semestral">Semestral - R$ 90,00</option>
+                            <option value="anual">Anual - R$ 80,00</option>
+                        </select>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações adicionais</legend>
+
+                    <p>
+                        <label for="nascimento">Data de nascimento:</label><br>
+                        <input type="date" id="nascimento" required>
+                    </p>
+
+                    <p>
+                        <label for="modalidade">Modalidade de interesse:</label><br>
+
+                        <input list="modalidades" id="modalidade" placeholder="Digite ou escolha uma modalidade">
+
+                        <datalist id="modalidades">
+                            <option value="Musculação">
+                            <option value="Yoga">
+                            <option value="Dança">
+                            <option value="Muay Thai">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="nivel">Nível de interesse em treinamento:</label><br>
+                        <input type="range" id="nivel" min="0" max="100">
+                    </p>
+
+                    <p>
+                        <label for="cor">Escolha uma cor para seu cadastro:</label><br>
+                        <input type="color" id="cor">
+                    </p>
+
+                    <p>
+                        <label for="arquivo">Documento ou arquivo:</label><br>
+                        <input type="file" id="arquivo">
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+
+                    <p>Você possui interesse em:</p>
+
+                    <label>
+                        <input type="checkbox" value="musculacao">
+                        Musculação
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" value="yoga">
+                        Yoga
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" value="danca">
+                        Dança
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" value="muaythai">
+                        Muay Thai
+                    </label>
+
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Realizar inscrição">
+                    <input type="reset" value="Limpar formulário">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Antes de se inscrever</h2>
+        <p>Confira os planos disponíveis.</p>
+        <a href="planos.html">Ver planos</a>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Olympia Prime - Projeto acadêmico, sem função comercial</p>
+    </footer>
+
+</body>
+
+</html>
